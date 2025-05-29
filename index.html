@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vishal's Live GitHub Projects</title>
+  <style>
+    body {
+      background: #12141f;
+      color: #eee;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 40px;
+      text-shadow: 0 0 15px #00bfff;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 15px #00bfff;
+      }
+      to {
+        text-shadow: 0 0 30px #1e90ff;
+      }
+    }
+    .projects-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      width: 100%;
+      max-width: 1100px;
+    }
+    .project-card {
+      background: #1a1c29;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0, 191, 255, 0.4);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      cursor: pointer;
+    }
+    .project-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 0 25px rgba(0, 191, 255, 0.8);
+    }
+    .project-img {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+      margin-bottom: 15px;
+      filter: drop-shadow(0 0 2px #00bfff);
+      transition: transform 0.3s ease;
+    }
+    .project-card:hover .project-img {
+      transform: scale(1.1);
+    }
+    .project-title {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 15px;
+      text-align: center;
+      color: #00bfff;
+    }
+    button {
+      background: linear-gradient(45deg, #00bfff, #1e90ff);
+      border: none;
+      border-radius: 30px;
+      padding: 12px 28px;
+      font-size: 1rem;
+      font-weight: 600;
+      color: white;
+      cursor: pointer;
+      box-shadow: 0 6px 15px rgba(0, 191, 255, 0.5);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      outline: none;
+      width: 100%;
+    }
+    button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 25px rgba(0, 191, 255, 0.9);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Vishal's Live Projects</h1>
+
+  <div class="projects-container">
+
+    <div class="project-card" onclick="window.open('https://appmakervishal.github.io/IP-finder/', '_blank')">
+      <img src="https://img.icons8.com/ios/100/1E90FF/ip-address.png" alt="IP Finder" class="project-img" />
+      <div class="project-title">IP-finder</div>
+      <button>Open Project</button>
+    </div>
+
+    <div class="project-card" onclick="window.open('https://appmakervishal.github.io/keyword-finder/', '_blank')">
+      <img src="https://img.icons8.com/ios/100/1E90FF/search--v1.png" alt="Keyword Finder" class="project-img" />
+      <div class="project-title">keyword-finder</div>
+      <button>Open Project</button>
+    </div>
+
+    <div class="project-card" onclick="window.open('https://appmakervishal.github.io/URL-Metadata-Finder/', '_blank')">
+      <img src="https://img.icons8.com/ios/100/1E90FF/info--v1.png" alt="URL Metadata Finder" class="project-img" />
+      <div class="project-title">URL-Metadata-Finder</div>
+      <button>Open Project</button>
+    </div>
+
+    <div class="project-card" onclick="window.open('https://appmakervishal.github.io/GitHub-Repo-Info-Finder/', '_blank')">
+      <img src="https://img.icons8.com/ios/100/1E90FF/github.png" alt="GitHub Repo Info Finder" class="project-img" />
+      <div class="project-title">GitHub-Repo-Info-Finder</div>
+      <button>Open Project</button>
+    </div>
+
+    <div class="project-card" onclick="window.open('https://appmakervishal.github.io/shortened-URL-to-its-final-destination/', '_blank')">
+      <img src="https://img.icons8.com/ios/100/1E90FF/forward-arrow.png" alt="URL Final Destination" class="project-img" />
+      <div class="project-title">shortened-URL-to-final-destination</div>
+      <button>Open Project</button>
+    </div>
+
+    <div class="project-card" onclick="window.open('https://appmakervishal.github.io/URL-shorter/', '_blank')">
+      <img src="https://img.icons8.com/ios/100/1E90FF/link.png" alt="URL Shorter" class="project-img" />
+      <div class="project-title">URL-shorter</div>
+      <button>Open Project</button>
+    </div>
+
+    <div class="project-card" onclick="window.open('https://appmakervishal.github.io/QR-maker/', '_blank')">
+      <img src="https://img.icons8.com/ios/100/1E90FF/qr-code.png" alt="QR Maker" class="project-img" />
+      <div class="project-title">QR-maker</div>
+      <button>Open Project</button>
+    </div>
+
+    <div class="project-card" onclick="window.open('https://appmakervishal.github.io/QR-scanner/', '_blank')">
+		<img src="https://img.icons8.com/color/96/qr-code.png" alt="QR Scanner" class="project-img" />
+		<div class="project-title">QR-scanner</div>
+		<button>Open Project</button>
+	</div>
+
+
+
+    <div class="project-card" onclick="window.open('https://appmakervishal.github.io/browse/', '_blank')">
+      <img src="https://img.icons8.com/ios/100/1E90FF/internet.png" alt="Browse" class="project-img" />
+      <div class="project-title">browse</div>
+      <button>Open Project</button>
+    </div>
+
+    <div class="project-card" onclick="window.open('https://appmakervishal.github.io/meet/', '_blank')">
+      <img src="https://img.icons8.com/ios/100/1E90FF/video-conference.png" alt="Meet" class="project-img" />
+      <div class="project-title">meet</div>
+      <button>Open Project</button>
+    </div>
+
+  </div>
+
+</body>
+</html>
